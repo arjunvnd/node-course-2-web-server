@@ -47,6 +47,11 @@ app.get('/bad',(req,res)=>{
         message:'Cannot find what is '
     })
 })
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        pageHeading:'This is the projects page'
+    })
+})
 
 app.listen(port,()=>{
     console.log(`The server is running on port ${port}`)
