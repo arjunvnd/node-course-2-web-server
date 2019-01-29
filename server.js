@@ -21,9 +21,9 @@ app.use((req,res,next)=>{
     next()
 })
 
-app.use((req,res,next)=>{
-    res.render('maintain.hbs')
-})
+// app.use((req,res,next)=>{
+//     res.render('maintain.hbs')
+// })
 
 app.get('/',(req,res)=>{
     res.render('index.hbs',{
